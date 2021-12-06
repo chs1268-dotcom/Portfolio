@@ -337,6 +337,7 @@ img{
     padding: .7rem;
     border-radius: 1rem;
     font-weight: var(--font-medium);
+    margin-bottom: 50px;
 }
 
 .button:hover{
@@ -381,4 +382,57 @@ img{
 .about__buttons{
     display: flex;
     justify-content: center;   
+}
+
+/*--------------------------------skills--------------------*/
+.skills__container{
+    row-gap: 0;
+}
+
+.skills__header{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
+.skills__icons{
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-right: var(--mb-0-75);
+}
+.skills__arrow{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+
+
+.skills__arrow{
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills__title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+    font-size: var(--h2-font-size);
+}
+
+.skills__name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills__close .skills__list{
+    height: 0;
+    overflow: hidden;
+}
+.skills__open .skills__list{
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
+
+.skills__open .skills__arrow{
+    transform: rotate(-180deg);
 }
